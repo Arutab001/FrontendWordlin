@@ -1,5 +1,6 @@
 .box1 {
-
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: nowrap;
     height: 50%;
@@ -107,23 +108,21 @@ body {
 .text3 {
     font-family: Dialog;
     padding: 5px;
-    margin: 10px 0;
     border: 0;
     border-bottom: 1px solid #eee;
     box-shadow: 0 0 15px 4px rgba(90, 87, 87, 0.06);
     border-radius: 10px;
-    width: 253px;
+    width: 100%;
 }
 
 .password1 {
     font-family: Dialog;
     padding: 5px;
-    margin: 10px 0;
     border: 0;
     border-bottom: 1px solid #eee;
     box-shadow: 0 0 15px 4px rgba(90, 87, 87, 0.06);
     border-radius: 10px;
-    width: 253px;
+    width: 100%;
 }
 
 .div1 {
