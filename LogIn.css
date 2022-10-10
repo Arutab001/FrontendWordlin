@@ -9,7 +9,15 @@
     flex-direction: column;
 }
 
-.toggle-button{
+body {
+    background-image: url("v904-nunny-012.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.toggle-button {
     position: relative;
     display: inline-block;
     width: 40px;
@@ -26,7 +34,8 @@
     appearance: none;
     transition: 0.3s;
 }
-.toggle-button::after{
+
+.toggle-button::after {
     content: "";
 
     display: inline-block;
@@ -42,20 +51,25 @@
     transform: translatex(0);
     transition: 0.3s;
 }
+
 .toggle-button:checked::after {
-    transform: translatex(calc(100% + 2px) );
+    transform: translatex(calc(100% + 2px));
     background-color: lightpink;
 }
+
 .toggle-button:checked {
     background-color: #ffffff;
 }
+
 .box3 div {
     display: flex;
     align-items: center;
 }
-.box1 +div1{
+
+.box1 + div1 {
     padding-left: 3px;
 }
+
 .box3 {
     display: flex;
     justify-content: space-between;
@@ -66,21 +80,19 @@
     width: 300px;
     height: 75px;
 }
+
 .text4 {
     font-family: "Book Antiqua";
     font-size: 22px;
     padding-right: 10px;
 
 }
+
 .text1 {
     font-size: xx-large;
     font-family: "Book Antiqua";
     flex-wrap: nowrap;
     width: 200px;
-}
-
-.div1 {
-    flex-wrap: nowrap;
 }
 
 .text2 {
@@ -89,7 +101,7 @@
 }
 
 .box2 div {
-    height:50px;
+    height: 50px;
 }
 
 .text3 {
@@ -113,8 +125,33 @@
     border-radius: 10px;
     width: 253px;
 }
-.div1{
+
+.div1 {
+    flex-wrap: nowrap;
     font-family: Calibri;
     font-size: x-large;
-    padding-right: 30px ;
+    padding-right: 0px;
 }
+
+.submit1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background: #f6f6f6;
+    box-shadow: inset 0px 20px 20px #ffffff;
+    text-align: center;
+}
+
+box2 {
+    width: 200px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Dialog;
+
+}
+
