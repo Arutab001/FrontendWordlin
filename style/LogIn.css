@@ -69,7 +69,7 @@ body {
     background-color: #ffffff;
 }
 
-.auth-user__title div {
+.auth-title div {
     display: flex;
     align-items: center;
 }
@@ -78,20 +78,20 @@ body {
     padding-left: 3px;
 }
 
-.auth-user__title {
+.auth-title {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
 
-.auth-user__title__type-choice__text {
+.auth-title__type-choice__text {
     font-size: 22px;
     padding-right: 10px;
 
 }
 
-.auth-user__title__type-text {
+.auth-title__type-auth {
     font-size: xx-large;
     flex-wrap: nowrap;
 }
@@ -104,21 +104,64 @@ body {
     height: 50px;
 }
 
-.auth-user__input__mail {
-    background: rgba(255, 255, 255, 0.45);
-    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    border-radius: 10px 10px 0 0;
-    border: 1px solid rgba(255, 255, 255, 0.83);
-
-    outline: none;
-    padding: 15px 15px 15px 30px;
-    width: 100%;
+.auth-input--margin {
     margin-bottom: 30px;
 }
 
-.auth-user__input__password {
+.auth-input-username {
+    display: none;
+}
+
+.auth-input-password-again {
+    display: none;
+}
+
+.auth-input__invalid-input {
+    display: flex;
+    align-items: baseline;
+    margin-left: 30px;
+    font-size: 12px;
+    visibility: hidden;
+    color: rgba(199, 12, 12, 0.8);
+}
+
+.auth-input-transparent {
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.89);
+    outline: none;
+    padding: 15px 15px 15px 30px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#auth-input-password-again__input {
+    border-radius: 0 0 10px 10px;
+}
+
+#auth-input-mail__input {
+    border-radius: 10px 10px 0 0;
+}
+
+.auth-input-password b {
+    display: flex;
+    align-items: baseline;
+    margin-left: 30px;
+    font-size: 12px;
+    color: rgba(199, 12, 12, 0.8);
+}
+
+.auth-input-password {
+    margin-bottom: 30px;
+}
+
+.auth-input-password b {
+    visibility: hidden;
+}
+
+.auth-input-password input {
     background: rgba(255, 255, 255, 0.45);
     box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
     backdrop-filter: blur(3px);
@@ -129,16 +172,16 @@ body {
     outline: none;
     padding: 15px 15px 15px 30px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
-.auth-user__title__type-choice {
+.auth-title__type-choice {
     flex-wrap: nowrap;
     justify-content: flex-end;
     font-size: x-large;
 }
 
-.auth-user__input__button {
+#auth-input__log-in-button {
     background: rgba(217, 111, 255, 0.3);
     box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(3px);
@@ -152,7 +195,7 @@ body {
     width: 50%;
 }
 
-.auth-user__input {
+.auth-input {
     width: 200px;
     margin-right: auto;
     margin-left: auto;
