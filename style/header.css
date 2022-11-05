@@ -1,0 +1,48 @@
+.auth-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.header-list__site-name {
+    color: white;
+    margin: 0;
+}
+
+.header-profile {
+    display: flex;
+    align-items: center;
+}
+
+.header-profile__username {
+    color: white;
+    margin-right: 10px;
+}
+
+.header-profile__image {
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px;
+}
+
+.header-list{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.header__all-list{
+
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}

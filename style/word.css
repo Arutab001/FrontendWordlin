@@ -1,0 +1,104 @@
+.content {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    margin: 15px auto;
+
+    width: 800px;
+    height: 80%;
+    padding: 15px;
+}
+
+
+.content-button {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.13);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 30px;
+    height: 70%;
+    width: 70%;
+}
+
+.content-button__text {
+    text-align: center;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+body {
+    background-image: url("../resource/background-v.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 8px 8px;
+    padding: 8px;
+}
+
+
+
+.header-profile {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.header-profile__image {
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+.input-translate__button {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.13);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+
+.input-translate__input {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.13);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    margin-bottom: 30px;
+}
+
+.input-translate {
+    width: 100%;
+    height: 150px;
+    display: grid;
+}
