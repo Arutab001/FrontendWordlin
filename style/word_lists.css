@@ -1,0 +1,57 @@
+body {
+    background-image: url("../resource/background-v.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.word {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.13);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    display: grid;
+    justify-content: start;
+    cursor: pointer;
+
+    padding: 10px;
+    width: 100%;
+}
+
+.content__add-button {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.13);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.word-lists {
+    display: flex;
+}
+
+.add-list {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.13);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0 15px;
+}
+
+.content-button {
+    margin-top: 10px;
+}
