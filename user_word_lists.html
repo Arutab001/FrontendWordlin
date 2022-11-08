@@ -9,18 +9,22 @@
     <title>Title</title>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/word_lists.css">
+    <link rel="stylesheet" href="style/public_word_lists.css">
     <link rel="stylesheet" href="style/content.css">
+    <link rel="stylesheet" href="style/block_transparency.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 <header class="header">
     <div class="header-list">
-        <h2 class="header-list__site-name">WORDLIN</h2>
-        <a class="header__all-list" href="./word_lists.html">public lists</a>
+        <a class="header-list__link-main" href="./main.html">
+            <h2 class="header-list__site-name">WORDLIN</h2>
+        </a>
+        <a class="header__all-list" href="./public_word_lists.html">public lists</a>
         <a class="header__all-list" href="./user_word_lists.html">my lists</a>
     </div>
     <div class="header-profile">
@@ -28,16 +32,17 @@
     </div>
 </header>
 
-<div class="content">
+<div class="content transparency">
     <div class="content-button">
         <a href="./add_directories.html">
-            <button class="content__add-button">add directories</button>
+            <button class="content__add-button transparency">add directories</button>
         </a>
     </div>
     <h2>
         List of directories:
     </h2>
 </div>
+
 
 <script src="src/setHeader.js"></script>
 <script src="src/userWordLists.js"></script>
