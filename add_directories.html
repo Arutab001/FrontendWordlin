@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Add directories</title>
@@ -8,23 +9,39 @@
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/content.css">
+    <link rel="stylesheet" href="style/add_directories.css">
+    <link rel="stylesheet" href="style/block_transparency.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
 <header class="header">
-    <h2 class="header-list__site-name">WORDLIN</h2>
+    <div class="header-list">
+        <a class="header-list__link-main" href="./main.html">
+            <h2 class="header-list__site-name">WORDLIN</h2>
+        </a>
+        <a class="header__all-list" href="./public_word_lists.html">public lists</a>
+        <a class="header__all-list" href="./user_word_lists.html">my lists</a>
+    </div>
     <div class="header-profile">
         <span id="header-profile__username" class="header-profile__username"></span>
     </div>
 </header>
 
-<div class="content">
-
+<div class="content transparency">
+    <h3 class="content-title-add-directory">Enter directory name: </h3>
+    <label class="content-input">
+        <input type="text" name="input_directory_name" class="transparency"
+               id="content__input-directory-name">
+    </label>
+    <button id="content__add-button" class="content__add-button transparency">
+        add
+    </button>
 </div>
-<script src="src/setHeader.js"></script>
 
+<script src="src/setHeader.js"></script>
+<script src="src/addDirectory.js"></script>
 </body>
 </html>

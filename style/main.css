@@ -1,21 +1,25 @@
 
-
-
 .content-button {
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.13);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+
 
     display: grid;
     width: 100%;
-    justify-content: start;
+    justify-content: center;
+    text-align: center;
     margin-bottom: 30px;
     cursor: pointer;
+    height: 100%;
 }
 
 .content-button__text {
     margin-left: 10px;
+}
+
+.content-link {
+    text-decoration: none;
+}
+
+
+.content{
+    height: 50%;
 }

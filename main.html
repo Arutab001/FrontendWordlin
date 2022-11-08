@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/content.css">
+    <link rel="stylesheet" href="style/block_transparency.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,29 +19,37 @@
 
 <body>
 <header class="header">
-    <h2 class="header-list__site-name">WORDLIN</h2>
+    <div class="header-list">
+        <a class="header-list__link-main" href="./main.html">
+            <h2 class="header-list__site-name">WORDLIN</h2>
+        </a>
+        <a class="header__all-list" href="./public_word_lists.html">public lists</a>
+        <a class="header__all-list" href="./user_word_lists.html">my lists</a>
+    </div>
     <div class="header-profile">
         <span id="header-profile__username" class="header-profile__username"></span>
     </div>
 </header>
 
-<div class="content">
-    <button class="content-button">
-        <h4 class="content-button__text">
-            Learn new word
-        </h4>
-    </button>
-    <button class="content-button">
-        <h4 class="content-button__text">
-            Review Words
-        </h4>
-    </button>
+<div class="content transparency">
+    <a class="content-link" href="./learn_word.html">
+        <button class="content-button transparency">
+            <h4 class="content-button__text">
+                Learn new word
+            </h4>
+        </button>
+    </a>
+    <!--    <button class="content-button transparency">-->
+    <!--        <h4 class="content-button__text">-->
+    <!--            Review Words-->
+    <!--        </h4>-->
+    <!--    </button>-->
 
-    <button class="content-button">
-        <h4 class="content-button__text">
-            Mixed mod
-        </h4>
-    </button>
+    <!--    <button class="content-button transparency">-->
+    <!--        <h4 class="content-button__text">-->
+    <!--            Mixed mod-->
+    <!--        </h4>-->
+    <!--    </button>-->
 </div>
 
 <script src="src/setHeader.js"></script>

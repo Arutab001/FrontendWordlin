@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сhoice of languages</title>
+    <script src="src/const.js"></script>
+    <script src="src/checkAuth.js"></script>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/content.css">
+    <link rel="stylesheet" href="style/add_directories.css">
+    <link rel="stylesheet" href="style/add_word.css">
+    <link rel="stylesheet" href="style/public_word_lists.css">
+    <link rel="stylesheet" href="style/choice_of_languages.css">
+    <link rel="stylesheet" href="style/block_transparency.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="header">
+    <div class="header-list">
+        <a class="header-list__link-main" href="./main.html">
+            <h2 class="header-list__site-name">WORDLIN</h2>
+        </a>
+
+        <a class="header__all-list" href="./public_word_lists.html">public lists</a>
+        <a class="header__all-list" href="./user_word_lists.html">my lists</a>
+    </div>
+    <div class="header-profile">
+        <span id="header-profile__username" class="header-profile__username"></span>
+    </div>
+</header>
+
+<div class="content transparency">
+    <h2>
+        Сhoice of languages:
+    </h2>
+
+
+    <div class="content-native-language">
+        <span>Native language: </span>
+        <br>
+        <select id="nativeLanguage" class="word transparency" autofocus>
+            <option value="EN">English</option>
+            <option value="UK">Ukrainian</option>
+            <option value="RU">Russian</option>
+            <option value="DE">German</option>
+            <option value="ZH">Chinese</option>
+            <option value="JA">Japanese</option>
+            <option value="PL">Polish</option>
+            <option value="HI">Hindi</option>
+            <option value="ES">Spanish</option>
+            <option value="KO">Korean</option>
+        </select>
+        <br>
+    </div>
+
+
+    <div class="content-native-language">
+        <span>Native language: </span>
+        <br>
+        <select id="targetLanguage" class="word transparency" autofocus>
+            <option value="EN">English</option>
+            <option value="UK">Ukrainian</option>
+            <option value="RU">Russian</option>
+            <option value="DE">German</option>
+            <option value="ZH">Chinese</option>
+            <option value="JA">Japanese</option>
+            <option value="PL">Polish</option>
+            <option value="HI">Hindi</option>
+            <option value="ES">Spanish</option>
+            <option value="KO">Korean</option>
+        </select>
+        <br>
+    </div>
+
+    <button id="submit" class="word transparency">
+        test
+    </button>
+</div>
+
+<script src="src/setHeader.js"></script>
+<script src="src/choiceOfLanguages.js"></script>
+
+</body>
+</html>

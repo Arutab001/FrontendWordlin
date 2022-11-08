@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="src/const.js"></script>
+    <script src="src/checkAuth.js"></script>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/word_lists.css">
+    <link rel="stylesheet" href="style/public_word_lists.css">
+    <link rel="stylesheet" href="style/words.css">
     <link rel="stylesheet" href="style/content.css">
+    <link rel="stylesheet" href="style/block_transparency.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +20,10 @@
 <body>
 <header class="header">
     <div class="header-list">
-        <h2 class="header-list__site-name">WORDLIN</h2>
-        <a class="header__all-list" href="./word_lists.html">public lists</a>
+        <a class="header-list__link-main" href="./main.html">
+            <h2 class="header-list__site-name">WORDLIN</h2>
+        </a>
+        <a class="header__all-list" href="./public_word_lists.html">public lists</a>
         <a class="header__all-list" href="./user_word_lists.html">my lists</a>
     </div>
     <div class="header-profile">
@@ -25,14 +31,15 @@
     </div>
 </header>
 
-
-<div class="content">
+<div class="content transparency">
+    <button id="content__add-word" class="content__add-word transparency">
+        Add
+    </button>
     <h2>
         List of words
     </h2>
 </div>
 
-<script src="src/const.js"></script>
 <script src="src/setHeader.js"></script>
 <script src="src/words.js"></script>
 

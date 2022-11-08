@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/content.css">
-
+    <link rel="stylesheet" href="style/add_directories.css">
+    <link rel="stylesheet" href="style/add_word.css">
+    <link rel="stylesheet" href="style/public_word_lists.css">
+    <link rel="stylesheet" href="style/block_transparency.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +21,11 @@
 <body>
 <header class="header">
     <div class="header-list">
-        <h2 class="header-list__site-name">WORDLIN</h2>
-        <a class="header__all-list" href="./word_lists.html">public lists</a>
+        <a class="header-list__link-main" href="./main.html">
+            <h2 class="header-list__site-name">WORDLIN</h2>
+        </a>
+
+        <a class="header__all-list" href="./public_word_lists.html">public lists</a>
         <a class="header__all-list" href="./user_word_lists.html">my lists</a>
     </div>
     <div class="header-profile">
@@ -27,7 +33,34 @@
     </div>
 </header>
 
+<div class="content transparency">
+    <h3 class="content-title-add-word">Enter word name: </h3>
+
+    <label class="content-input">
+        <input type="text" name="input_directory_name" placeholder="Word" class="input-text transparency"
+               id="content__input-word-name">
+        <b class="word-input__field-must-be-filled" id="word-input__field-must-be-filled">Field must be filled</b>
+    </label>
+    <div class="translations word-blocks" id="translations">
+        <label class="content-input">
+            <input type="text" name="input_directory_name" placeholder="Translate"
+                   class="content-input__word input-text transparency"
+                   id="content__input-translate-name">
+            <b class="translate-input__field-must-be-filled" id="translate-input__field-must-be-filled">Field must be filled</b>
+        </label>
+    </div>
+
+    <button id="content__add-translate-button" class="content__add-button transparency">
+        Add translate
+    </button>
+
+    <button id="content__add-word-button" class="content__add-button transparency">
+        Add word
+    </button>
+</div>
 <script src="src/setHeader.js"></script>
+<script src="src/checkAuth.js"></script>
+<script src="src/addWord.js"></script>
 
 </body>
 </html>
