@@ -116,7 +116,7 @@ body {
     display: none;
 }
 
-.auth-input__invalid-input {
+.auth-input__field-must-be-filled {
     display: flex;
     align-items: baseline;
     margin-left: 30px;

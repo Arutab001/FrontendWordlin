@@ -43,6 +43,8 @@ document.getElementById("auth-input__log-in-button").addEventListener("click", a
 
     } else {
 
+        console.log(validEmail);
+        console.log(validPassword);
         if (validEmail && validPassword) {
 
             let response = await fetch(backendUrl + '/token', {
