@@ -1,0 +1,47 @@
+body {
+    background-image: url("../resource/background-v.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.word {
+    cursor: pointer;
+
+    width: 100%;
+    padding: 10px;
+}
+
+.content__add-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.content__add-word {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.word-lists {
+    display: grid;
+}
+
+.word-block {
+    display: flex;
+    margin-top: 10px;
+}
+
+.add-list {
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0 15px;
+}
+
+.content-button {
+    margin-top: 10px;
+}

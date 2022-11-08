@@ -2,12 +2,16 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <script src="src/const.js"></script>
+    <script src="src/checkAuth.js"></script>
+
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/word_lists.css">
+    <link rel="stylesheet" href="style/public_word_lists.css">
+    <link rel="stylesheet" href="style/block_transparency.css">
     <link rel="stylesheet" href="style/content.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +22,10 @@
 <body>
 <header class="header">
     <div class="header-list">
-        <h2 class="header-list__site-name">WORDLIN</h2>
-        <a class="header__all-list" href="./word_lists.html">public lists</a>
+        <a class="header-list__link-main" href="./main.html">
+            <h2 class="header-list__site-name">WORDLIN</h2>
+        </a>
+        <a class="header__all-list" href="./public_word_lists.html">public lists</a>
         <a class="header__all-list" href="./user_word_lists.html">my lists</a>
     </div>
     <div class="header-profile">
@@ -27,18 +33,17 @@
     </div>
 </header>
 
-<div class="content">
+<div class="content transparency">
     <h2>
         List of directories:
     </h2>
-    <div class="word-lists">
+    <div class="word-lists ">
 
     </div>
 </div>
 
-<script src="src/const.js"></script>
 <script src="src/setHeader.js"></script>
-<script src="src/wordLists.js"></script>
+<script src="src/publicWordLists.js"></script>
 
 </body>
 </html>
