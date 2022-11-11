@@ -26,34 +26,6 @@ document.getElementById("content__add-word-button").addEventListener("click", as
     let idWord = new URLSearchParams(location.search).get(wordId);
     let idListSet = new URLSearchParams(location.search).get(idList);
 
-    // if (idWord) {
-    //
-    //     let word = {
-    //         "id": idWord,
-    //         "word": {
-    //             "word": "string"
-    //         },
-    //         "nativeLanguage": "EN",
-    //         "targetLanguage": "EN",
-    //         "translation": [
-    //             {
-    //                 "id": 0,
-    //                 "word": "string"
-    //             }
-    //         ]
-    //     }
-    //     let response = await fetch(backendUrl + '/word/add', {
-    //         method: 'GET',
-    //         headers: {
-    //             'Content-Type': 'application/json;charset=utf-8',
-    //             'Authorization': `Bearer ${token}`,
-    //         },
-    //         body: JSON.stringify(word)
-    //     });
-    //
-    //     return;
-    // }
-
     let word = document.getElementById("content__input-word-name").value;
 
     let translationWord = document.getElementsByClassName("content-input__word");

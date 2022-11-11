@@ -11,15 +11,34 @@ document.getElementById("auth-input__log-in-button").addEventListener("click", a
 
     if (typeRegistration) {
 
-        const usernameInput = document.getElementById("auth-input-password-again__input").value;
+        const usernameInput = document.getElementById("auth-input-username__input").value;
         const validUsername = usernameInput.length >= 5;
-        document.getElementById("auth-input-password-again__invalid-input").style.visibility = getVisibility(validUsername);
+        console.log(document.getElementById("auth-input-username__invalid-input").style.visibility);
+        document.getElementById("auth-input-username__invalid-input").style.visibility = getVisibility(validUsername);
+        console.log(document.getElementById("auth-input-username__invalid-input").style.visibility);
 
-        const validRepeatPassword = document.getElementById("auth-input-username__input").value === passwordInput;
-        document.getElementById("auth-input-username__invalid-input").style.visibility = getVisibility(validPassword);
+        console.log(document.getElementById("auth-input-password__input").value);
+
+        console.log((passwordInput));
+        console.log((passwordInput));
+
+
+        const validRepeatPassword = document.getElementById("auth-input-password-again__input").value === passwordInput;
+
+        console.log(document.getElementById("auth-input-password-again__invalid-input").style.visibility);
+        document.getElementById("auth-input-password-again__invalid-input").style.visibility = getVisibility(validRepeatPassword);
+        console.log(document.getElementById("auth-input-password-again__invalid-input").style.visibility);
+
+        console.log(validPassword)
+        console.log(validUsername)
+        console.log(validRepeatPassword)
+        console.log(validEmail)
 
         if (validEmail && validUsername && validPassword && validRepeatPassword) {
 
+            console.log(usernameInput)
+            console.log(emailInput)
+            console.log(passwordInput)
             if (validEmail && validPassword) {
                 let user = {
                     username: `${usernameInput}`,
@@ -35,6 +54,10 @@ document.getElementById("auth-input__log-in-button").addEventListener("click", a
                     body: JSON.stringify(user)
                 });
 
+                if (!response.ok) {
+                    alert('There is already a user with this email')
+                    return
+                }
                 let result = await response.json();
                 console.log(result);
                 location.reload();
@@ -54,6 +77,10 @@ document.getElementById("auth-input__log-in-button").addEventListener("click", a
                     'Authorization': 'Basic ' + btoa(`${emailInput}:${passwordInput}`),
                 },
             });
+            if (!response.ok) {
+                alert('Wrong mail address or password');
+                return;
+            }
             let token = await response.text();
             console.log(token)
             localStorage.setItem(keyToken, token);

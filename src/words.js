@@ -39,6 +39,7 @@
             textTranslations += it.word + ', ';
         });
 
+
         textTranslations = textTranslations.substring(0, textTranslations.length - 2);
 
         wordTranslations.textContent = textTranslations;

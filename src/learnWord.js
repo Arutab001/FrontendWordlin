@@ -9,6 +9,12 @@ let translationId;
         },
     });
 
+    if (!response.ok) {
+        alert(`You haven't words to learn`);
+        window.location = "./main.html";
+        return;
+    }
+
     const recentlyUsedWord = await response.json();
 
     document.getElementById('content-button__text').textContent = recentlyUsedWord.translation.word.word;
@@ -17,6 +23,7 @@ let translationId;
 })()
 
 document.getElementById('remember').addEventListener('click', async () => {
+
 
     let response = await fetch(backendUrl + '/recentlyUsedWord/updateLevel/' + translationId, {
         method: 'POST',

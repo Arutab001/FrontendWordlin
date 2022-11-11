@@ -11,10 +11,10 @@
 
 .content-button__text {
     text-align: center;
-    margin-left: 10px;
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 body {
@@ -35,15 +35,10 @@ body {
     padding: 8px;
 }
 
-
-
 .header-profile {
     display: flex;
     align-items: center;
 }
-
-
-
 
 .header-profile__image {
     max-height: 40px;
